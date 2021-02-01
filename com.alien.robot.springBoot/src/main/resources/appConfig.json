@@ -1,0 +1,14 @@
+{
+  "clientId": "1290526241408.1279315626337",
+  "clientSecret": "60703751e1cac8dc4622868146f09798",
+  "signingSecret": "71fa479067538a4b8ea082def03a809f",
+  "singleTeamBotToken": "xoxb-1290526241408-1266705714322-IkavDmCgwsNzK8QObEq9BQAZ",
+  "oauthStartPath": "start",
+  "oauthCallbackPath": "http://fd20bbbf345b.ngrok.io/auth/slack/callback",
+  "redirectUri": "http://fd20bbbf345b.ngrok.io/slack/oauth/callback",
+  "oauthCancellationUrl": "https://www.example.com/cancellation",
+  "oauthCompletionUrl": "https://www.example.com/thank-you",
+  "scope": "app_mentions:read,chat:write,calls:read,calls:write,channels:history,channels:join,channels:manage,channels:read,hat:write,chat:write.customize,chat:write.public,dnd:read,emoji:read,files:read,files:write,groups:history,groups:read,groups:write,im:history,im:read,im:write,incoming-webhook,links:read,links:write,mpim:history,mpim:read,mpim:write,pins:read,pins:write,reactions:read,reactions:write,reminders:read,reminders:write,remote_files:read,remote_files:share,remote_files:write,team:read,usergroups:read,usergroups:write,users.profile:read,users:read,users:read.email,users:write,workflow.steps:execute",
+  "userScope": "channels:read,channels:write,chat:write,dnd:write,emoji:read,files:read,files:write,groups:history",
+  "installation_url_memo": "http://fd20bbbf345b.ngrok.io/slack/oauth/start"
+}

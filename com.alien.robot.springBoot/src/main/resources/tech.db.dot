@@ -1,0 +1,39 @@
+digraph g {
+
+parent [
+   id="1", actioncomponent="button",usermessage="What would you like to do?",options="Create,View,Update,Delete", shape = "Mrecord",
+   label="<
+     <table border='1' cellborder='1'>
+       <tr><td>What would you like to Do?</td></tr>
+       <tr><td button='button_create'>Create</td><td button='button_read'>Read</td><td button='button_update'>Update</td><td button='button_delete'>Delete</td></tr>
+     </table>
+  >"];
+  
+  
+  create_child [
+   id="2", usermessage ="What would you like to create?" ,actioncomponent="button",options="Entity, Attribute, Relationship",shape = "Mrecord", label="
+   <<table border='1' cellborder='1'>
+       <tr><td>What would you like to create?</td></tr>
+       <tr><td button='button_entity'>Entity</td><td button='button_attribute'>Attribute</td><td button='button_relationship'>Relationship</td></tr>
+    </table>>" 
+     ];
+     
+     
+     entity_child [
+   id="3", usermessage ="Enter the name of the entity?" ,actioncomponent="textfield",shape = "Mrecord", label="Enter the name of the entity?"
+     ];
+     
+     
+ read_child [
+   id="4", usermessage ="Read the model", actioncomponent="button",options="Entity, Attribute, Relationship",shape = "diamond", label="Read the model"
+     ];
+     
+ display_xml[id="5", usermessage ="Display XML" ,component="table",shape = "circle",label ="Display the model"];
+     
+
+    parent -> create_child [ label = "Create"];
+    parent -> read_child [ label = "Read"];
+    create_child -> entity_child;
+    read_child -> display_xml;
+    entity_child -> display_xml;
+}
